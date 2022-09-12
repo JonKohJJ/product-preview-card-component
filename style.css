@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    line-height: 1.6;
+    font-size: 14px;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* CSS VARIABLES */
+:root{
+    --font-color-title: hsl(212, 21%, 14%);
+    --font-color-paragraph: hsl(228, 12%, 48%);
+    --font-color-green: hsl(158, 36%, 37%);
+}
+
+/* FONT CLASSES */
+.ff-fraunces{
+    font-family: 'Fraunces', serif;
+}
+.ff-montserrat{
+    font-family: 'Montserrat', sans-serif; 
+}
+.uppercase{
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+.title{
+    color: var(--font-color-title);
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 15px 0 20px 0;
+}   
+.title-green{
+    color: var(--font-color-green);
+}
+.paragraph{
+    color: var(--font-color-paragraph);
+    line-height: 1.6rem;
+}
+
+
+.hide{
+    display: none;
+}
+
+.body-wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(30, 38%, 92%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    min-height: 500px;
+    max-width: 350px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+
+.image-div img{
+    border-radius: 10px 10px 0 0;
+}
+.text-div{
+    padding: 27px;
+}
+.price-div{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.old-price{
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+button{
+    width: 100%;
+    border-radius: 6px;
+    background-color: var(--font-color-green);
+    color: white !important;
+    border: none;
+    min-height: 50px;
+    font-weight: 700;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:hover{
+    background-color: hsl(158deg 37% 27%);
+    transition: all 0.2s ease-in-out;
+}
+button img{
+    padding-right: 10px;
+}
+
+
+
+/* MEDIA QUERIES - DESKTOP */
+@media screen and (min-width: 991px){
+    .container{
+        display: flex;
+        max-width: 725px;
+    }
+
+    .image-div{
+        width: 145%;
+    }
+
+    .image-div img{ 
+        border-radius: 10px 0 0 10px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text-div{
+        padding: 35px;
+    }
+
+    .title{
+        font-size: 2.7rem;
+        line-height: 3rem;
+        padding: 20px 0 25px 0;
+    }   
+    .paragraph{
+        font-size: 16px;
+    }
+
+    .uppercase{
+        letter-spacing: 0.5rem;
+    }
+}
