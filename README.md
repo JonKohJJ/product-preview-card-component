@@ -11,7 +11,7 @@ Users should be able to:
 - See hover and focus states for interactive elements
 
 ### Links
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://jonkohjj.github.io/product-preview-card-component/](https://jonkohjj.github.io/product-preview-card-component/)
 
 ### Built with
 
